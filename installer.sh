@@ -106,4 +106,11 @@ else
     mv dist/main "$program_dir/VesicleInsight"
 fi
 
+# Cleanup unnecessary files
+echo "Cleaning up unnecessary files..."
+rm -rf build dist
+rm -f main.py
+rm -f intaller.sh
+rm -f *.spec
+
 echo "Installation has been completed. You can run the program by simply typing 'VesicleInsight' in the terminal."
