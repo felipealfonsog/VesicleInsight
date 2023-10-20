@@ -108,7 +108,7 @@ else
     program_dir="/usr/local/bin"
     
     # Move the PyInstaller output to the Programs directory on other systems
-    mv dist/main "$program_dir/VesicleInsight"
+    sudo mv dist/main "$program_dir/VesicleInsight"
 fi
 
 echo "==========================================================================="
