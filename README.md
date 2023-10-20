@@ -18,6 +18,10 @@ VesicleInsight is an innovative Python-powered medical imaging analysis tool des
 
 To be always updated about the project, keep visiting the GitHub repository. Contributions and feedback are always welcome! 🚀
 
+#### Screenshot - (Experimental)
+
+![Screenshot of the application interface](images/Screen%20Shot%202023-10-20%20at%2011.28.24.png)
+
 #### Features 💡
 
 - **Advanced Imaging Analysis**: Leverage state-of-the-art machine learning algorithms for in-depth analysis of medical imaging data.
@@ -25,6 +29,81 @@ To be always updated about the project, keep visiting the GitHub repository. Con
 - **Early Detection**: Enable healthcare professionals to identify vesicle anomalies at an early stage, facilitating timely intervention.
 
 - **User-Friendly Interface**: A sleek and intuitive user interface designed to streamline the diagnostic process.
+
+#### Install using a BASH script! 
+
+[![Install VesicleInsight](https://img.shields.io/badge/Install-VesicleInsight-brightgreen)](#)
+
+
+To install VesicleInsight, simply run the installer script available [here](https://github.com/felipealfonsog/VesicleInsight/raw/main/installer.sh).
+
+Or just Copy - Paste in your terminal and use -curl- to start downloading the installer:
+
+   ```
+   curl -O https://raw.githubusercontent.com/felipealfonsog/VesicleInsight/main/installer.sh
+   ```
+
+If you want to use -wget- just copy/paste this line:
+
+   ```
+   wget https://github.com/felipealfonsog/VesicleInsight/raw/main/installer.sh
+   ```
+
+   On macOS to download - wget - just install it with Homebrew:
+
+   ```
+   brew install wget
+   ```
+
+#### Important note when installing:
+
+If you encounter issues executing the file in the terminal, like this message "-bash: ./installer.sh: Permission denied", follow these simple steps to fix it:
+
+1. Open your terminal.
+2. Navigate to the directory where the installer script is located using the `cd` command.
+3. Run the following command to grant execute permission to the installer script:
+
+   ```
+   chmod +x installer.sh
+   ```
+   
+4. Now you can run the installer without any problems.
+
+   ```
+   ./installer.sh
+   ```
+   NOTE: The script will ask for -sudo permissions-. Just simply type in macOS your macOS user password, and in Linux your -sudo- password.
+
+Now type 'VesicleInsight' in the terminal and enjoy using VesicleInsight! 😊🚀
+
+Feel free to reach out if you need any further assistance!
+
+#### Updating with the script: 
+If you want to update term-notes in your system, re-run the script:
+
+   ```
+   ./installer.sh
+   ```
+Please note that if you encounter any issues or have suggestions, feel free to raise an issue on the [VesicleInsight repository](https://github.com/felipealfonsog/VesicleInsight/issues). Your feedback is invaluable!
+
+Thank you for joining me on this journey, and I hope VesicleInsight brings value to your life and workflow. Let's continue making technology accessible and enjoyable for everyone!
+
+
+
+#### NOTES
+
+Important dependency
+
+```
+pip install scikit-learn
+```
+
+Installer:
+
+```
+pyinstaller --onefile --hidden-import sklearn src/main.py
+
+```
 
 
 #### Contributing
