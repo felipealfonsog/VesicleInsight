@@ -1,3 +1,28 @@
+# spendwiseapp.py
+'''
+
+
+▒█░░▒█ █▀▀ █▀▀ ░▀░ █▀▀ █░░ █▀▀ ▀█▀ █▀▀▄ █▀▀ ░▀░ █▀▀▀ █░░█ ▀▀█▀▀ 
+░▒█▒█░ █▀▀ ▀▀█ ▀█▀ █░░ █░░ █▀▀ ▒█░ █░░█ ▀▀█ ▀█▀ █░▀█ █▀▀█ ░░█░░ 
+░░▀▄▀░ ▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀ ▄█▄ ▀░░▀ ▀▀▀ ▀▀▀ ▀▀▀▀ ▀░░▀ ░░▀░░
+
+*************************************************
+VesicleInsight: A program for detecting gallbladder cancer.
+*************************************************
+* Developed and engineered by:
+* Felipe Alfonso Gonzalez <f.alfonso@res-ear.ch>
+* Computer Science Engineer
+* Chile
+*************************************************
+* Important Notes:
+* - The application has been tested on Linux and macOS.
+* - For Windows, additional configurations may be required.
+* - Make sure to fulfill the prerequisites before running the application.
+* - The database model may need to be adjusted to match your database setup.
+* - For more information, please refer to the project documentation.
+*************************************************
+'''
+
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QPushButton, QLabel, QFileDialog
 from PyQt5.QtGui import QImage, QPixmap
