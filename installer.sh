@@ -10,8 +10,7 @@
 # Computer Science Engineer
 # Chile
 #*************************************
-    
-# Installer  v.1.0.2
+
 
 echo "
 
@@ -48,7 +47,7 @@ echo "License: MIT (Restrictive)"
 echo "***************************************************************************"
 
 # User confirmation to proceed
-read -p "Do you want to proceed with the installation? (y/n): " choice
+read -p "Do you want to proceed with the installation? (y/N): " choice
 if [ "$choice" != "y" ]; then
     echo "Installation canceled."
     exit 1
@@ -74,7 +73,7 @@ pip install scikit-learn
 
 # Install PyInstaller if not installed
 if ! command -v pyinstaller &> /dev/null; then
-    read -p "PyInstaller is not installed. Do you want to install PyInstaller? (y/n): " pyinstaller_choice
+    read -p "PyInstaller is not installed. Do you want to install PyInstaller? (y/N): " pyinstaller_choice
     if [ "$pyinstaller_choice" == "y" ]; then
         python3 -m pip install pyinstaller
     else
