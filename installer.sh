@@ -86,7 +86,7 @@ fi
 
 # Download the main.py file from GitHub
 echo "==========================================================================="
-echo "Downloading source code from GitHub to cpompile te program..."
+echo "Downloading source code from GitHub to cpompile the program..."
 curl -o main.py https://raw.githubusercontent.com/felipealfonsog/VesicleInsight/development/src/main.py
 
 # Compile Python code using PyInstaller in the installation directory
