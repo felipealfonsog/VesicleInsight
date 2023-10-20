@@ -29,10 +29,9 @@ To be always updated about the project, keep visiting the GitHub repository. Con
 
 #### Important dependency
 
-'''
+```
 pip install scikit-learn
-
-'''
+```
 
 
 #### Contributing
