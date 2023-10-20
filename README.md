@@ -1,10 +1,10 @@
-### VesicleInsight 🌐 - Empowering Early Medical Diagnosis
+### VesicleInsight 🩺💻 - Empowering Early Medical Diagnosis
 
 VesicleInsight is an innovative Python-powered medical imaging analysis tool designed to revolutionize early detection and diagnosis. Leveraging cutting-edge machine learning algorithms, the project focuses on identifying vesicle abnormalities in medical images. The application provides healthcare professionals with an intuitive user interface, streamlining the diagnostic process and facilitating timely interventions. VesicleInsight's features include advanced imaging analysis, user-friendly interactions, and a commitment to early detection. The open-source nature of the project encourages contributions, making it a collaborative initiative. With a mission to enhance the accuracy and efficiency of medical diagnostics, VesicleInsight stands at the forefront of technology in the healthcare domain.
 
 For more details, visit our GitHub repository. Contributions and feedback are always welcome! 🚀
 
-#### Features
+#### Features 💡
 
 - **Advanced Imaging Analysis**: Leverage state-of-the-art machine learning algorithms for in-depth analysis of medical imaging data.
   
