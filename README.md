@@ -79,7 +79,7 @@ Now type 'VesicleInsight' in the terminal and enjoy using VesicleInsight! ðŸ˜ŠðŸ
 Feel free to reach out if you need any further assistance!
 
 #### Updating with the script: 
-If you want to update term-notes in your system, re-run the script:
+If you want to update the program in your system, re-run the script:
 
    ```
    ./installer.sh
