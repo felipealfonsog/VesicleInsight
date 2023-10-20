@@ -1,6 +1,8 @@
-### VesicleInsight 🩺💻 - Empowering Early Medical Diagnosis
+### VesicleInsight 🩺💻 - Empowering Early Medical Diagnosis*
 
 VesicleInsight is an innovative Python-powered medical imaging analysis tool designed to revolutionize early detection and diagnosis. Leveraging cutting-edge machine learning algorithms, the project focuses on identifying vesicle abnormalities in medical images. The application provides healthcare professionals with an intuitive user interface, streamlining the diagnostic process and facilitating timely interventions. VesicleInsight's features include advanced imaging analysis, user-friendly interactions, and a commitment to early detection. The open-source nature of the project encourages contributions, making it a collaborative initiative. With a mission to enhance the accuracy and efficiency of medical diagnostics, VesicleInsight stands at the forefront of technology in the healthcare domain.
+
+<sub>* This is currently an [(Experimental)](#important-experimental-project) phase where the primary focus is on making the system functional and establishing a practical and logical pathway that aligns with both my vision and the project's goals. It might contain errors, bugs, etc. Many other non-core elements of the project are considered secondary.</sub>
 
 ![Version](https://img.shields.io/github/release/felipealfonsog/VesicleInsight.svg?style=flat&color=blue)
 ![Main Language](https://img.shields.io/github/languages/top/felipealfonsog/VesicleInsight.svg?style=flat&color=blue)
@@ -34,6 +36,12 @@ Contributions are welcome! Here's how you can contribute to Term Notes:
 3. Make your changes and commit them: `git commit -m 'Add your feature'`.
 4. Push the changes to your branch: `git push origin feature/your-feature-name`.
 5. Create a new pull request.
+
+#### 📝 Important (Experimental Project) 💡
+
+[![Experimental Project](https://img.shields.io/badge/Project-Type%3A%20Experimental-blueviolet)](#)
+
+<p>This project is still in its experimental stage and may have limitations in terms of features and compatibility. Use at your own discretion.</p>
 
 
 #### Contact
