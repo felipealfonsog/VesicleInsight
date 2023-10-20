@@ -20,7 +20,13 @@ To be always updated about the project, keep visiting the GitHub repository. Con
 
 #### Screenshot - (Experimental)
 
+##### macOS
+
 ![Screenshot of the application interface](images/Screen%20Shot%202023-10-20%20at%2011.28.24.png)
+
+##### Linux
+
+![Screenshot of the application interface](images/sshot-linux-0.0.2.jpg)
 
 #### Features 💡
 
