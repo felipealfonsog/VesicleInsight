@@ -111,16 +111,17 @@ else
     mv dist/main "$program_dir/VesicleInsight"
 fi
 
+echo "==========================================================================="
 # Cleanup unnecessary files
 echo "Cleaning up unnecessary files..."
 rm -rf build dist
 rm -f main.py
-rm -f intaller.sh
+rm -f *.sh
 rm -f *.spec
 
-echo "***************************************************************************"
 echo "==========================================================================="
 echo "Installation has been completed."
 echo "You can run the program by simply typing 'VesicleInsight' in the terminal."
-echo "In macOS go to Applications and find the folder 'VesicleInsight."
+echo "In macOS go to Applications and find the folder 'VesicleInsight'"
 echo "==========================================================================="
+
