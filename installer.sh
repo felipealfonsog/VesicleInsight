@@ -56,7 +56,7 @@ fi
 
 # Install Homebrew if not installed
 if [ ! -x "$(command -v brew)" ]; then
-    read -p "Homebrew is not installed. Do you want to install Homebrew? (y/n): " brew_choice
+    read -p "Homebrew is not installed. Do you want to install Homebrew? (y/N): " brew_choice
     if [ "$brew_choice" == "y" ]; then
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
     else
@@ -92,6 +92,7 @@ curl -o main.py https://raw.githubusercontent.com/felipealfonsog/VesicleInsight/
 # Compile Python code using PyInstaller in the installation directory
 echo "==========================================================================="
 echo "Compiling Python code with PyInstaller..."
+echo "-----------------------------------------"
 pyinstaller --onefile --hidden-import sklearn main.py
 
 # Select the appropriate directory based on the operating system
@@ -108,6 +109,8 @@ else
     program_dir="/usr/local/bin"
     
     # Move the PyInstaller output to the Programs directory on other systems
+    echo "==========================================================================="
+    echo "Please input the root password to ensure proper permissions during the program installation..."
     sudo mv dist/main "$program_dir/VesicleInsight"
 fi
 
