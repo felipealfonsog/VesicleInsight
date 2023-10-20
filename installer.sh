@@ -81,9 +81,13 @@ if ! command -v pyinstaller &> /dev/null; then
     fi
 fi
 
+# Download the main.py file from GitHub
+echo "Downloading source code from GitHub to cpompile te program..."
+curl -o main.py https://raw.githubusercontent.com/felipealfonsog/VesicleInsight/development/src/main.py
+
 # Compile Python code using PyInstaller in the installation directory
 echo "Compiling Python code with PyInstaller..."
-pyinstaller --onefile --hidden-import sklearn src/main.py
+pyinstaller --onefile --hidden-import sklearn main.py
 
 # Select the appropriate directory based on the operating system
 if [ "$(uname)" == "Darwin" ]; then
