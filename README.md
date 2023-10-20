@@ -27,6 +27,14 @@ To be always updated about the project, keep visiting the GitHub repository. Con
 - **User-Friendly Interface**: A sleek and intuitive user interface designed to streamline the diagnostic process.
 
 
+#### Important dependency
+
+'''
+pip install scikit-learn
+
+'''
+
+
 #### Contributing
 
 Contributions are welcome! Here's how you can contribute to Term Notes:
