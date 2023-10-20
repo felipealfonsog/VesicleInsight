@@ -70,6 +70,8 @@ brew install python
 python3 -m ensurepip --default-pip
 python3 -m pip install --upgrade pip
 pip install scikit-learn
+pip install Pillow
+pip install PyQt5
 
 # Install PyInstaller if not installed
 if ! command -v pyinstaller &> /dev/null; then
