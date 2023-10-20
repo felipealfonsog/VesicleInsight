@@ -45,6 +45,7 @@ echo "======================================="
 echo "Description: A program for detecting gallbladder cancer."
 echo "Creator: Felipe Alfonso Gonzalez - github.com/felipealfonsog - f.alfonso@res-ear.ch"
 echo "License: MIT (Restrictive)"
+echo "***************************************************************************"
 
 # User confirmation to proceed
 read -p "Do you want to proceed with the installation? (y/n): " choice
@@ -59,6 +60,7 @@ if [ ! -x "$(command -v brew)" ]; then
     if [ "$brew_choice" == "y" ]; then
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
     else
+        echo "***************************************************************************"
         echo "Installation canceled. Homebrew is required for the installation."
         exit 1
     fi
@@ -76,16 +78,19 @@ if ! command -v pyinstaller &> /dev/null; then
     if [ "$pyinstaller_choice" == "y" ]; then
         python3 -m pip install pyinstaller
     else
+        echo "***************************************************************************"
         echo "Installation canceled. PyInstaller is required for the installation."
         exit 1
     fi
 fi
 
 # Download the main.py file from GitHub
+echo "==========================================================================="
 echo "Downloading source code from GitHub to cpompile te program..."
 curl -o main.py https://raw.githubusercontent.com/felipealfonsog/VesicleInsight/development/src/main.py
 
 # Compile Python code using PyInstaller in the installation directory
+echo "==========================================================================="
 echo "Compiling Python code with PyInstaller..."
 pyinstaller --onefile --hidden-import sklearn main.py
 
@@ -113,4 +118,9 @@ rm -f main.py
 rm -f intaller.sh
 rm -f *.spec
 
-echo "Installation has been completed. You can run the program by simply typing 'VesicleInsight' in the terminal."
+echo "***************************************************************************"
+echo "==========================================================================="
+echo "Installation has been completed."
+echo "You can run the program by simply typing 'VesicleInsight' in the terminal."
+echo "In macOS go to Applications and find the folder 'VesicleInsight."
+echo "==========================================================================="
