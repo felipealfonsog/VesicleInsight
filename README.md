@@ -28,7 +28,7 @@ To be always updated about the project, keep visiting the GitHub repository. Con
 
 ![Screenshot of the application interface](images/sshot-linux-0.0.2.jpg)
 
-#### Features 💡
+#### Features ongoing 💡
 
 - **Advanced Imaging Analysis**: Leverage state-of-the-art machine learning algorithms for in-depth analysis of medical imaging data.
   
