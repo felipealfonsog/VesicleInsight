@@ -22,7 +22,7 @@ To be always updated about the project, keep visiting the GitHub repository. Con
 
 ##### macOS
 
-![Screenshot of the application interface](images/Screen%20Shot%202023-10-20%20at%2011.28.24.png)
+![Screenshot of the application interface](images/sshot-mac-0.0.2.png)
 
 ##### Linux
 
