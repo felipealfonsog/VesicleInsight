@@ -96,6 +96,7 @@ echo "Compiling Python code with PyInstaller..."
 echo "-----------------------------------------"
 pyinstaller --onefile --hidden-import sklearn main.py
 
+
 # Select the appropriate directory based on the operating system
 if [ "$(uname)" == "Darwin" ]; then
     program_dir="/Applications"
@@ -106,6 +107,14 @@ if [ "$(uname)" == "Darwin" ]; then
 
     # Rename and move the PyInstaller output to the Programs directory
     mv dist/main "$project_folder/VesicleInsight"
+
+    # Mover el ejecutable a la carpeta de aplicaciones
+    if [ -d "/Applications/VesicleInsight" ]; then
+        mv dist/main "/Applications/VesicleInsight/VesicleInsight"
+    else
+        echo "The folder /Applications/VesicleInsight is not there. Check the structure of the installation."
+    fi
+
 else
     program_dir="/usr/local/bin"
     
