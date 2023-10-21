@@ -96,7 +96,6 @@ echo "Compiling Python code with PyInstaller..."
 echo "-----------------------------------------"
 pyinstaller --onefile --hidden-import sklearn main.py
 
-
 # Select the appropriate directory based on the operating system
 if [ "$(uname)" == "Darwin" ]; then
     program_dir="/Applications"
@@ -106,11 +105,11 @@ if [ "$(uname)" == "Darwin" ]; then
     mkdir -p "$project_folder"
 
     # Rename and move the PyInstaller output to the Programs directory
-    mv dist/main "$project_folder/VesicleInsight"
+    mv "dist/main" "$project_folder/VesicleInsight"
 
-    # Mover el ejecutable a la carpeta de aplicaciones
+    # Move the executable to the Applications folder
     if [ -d "/Applications/VesicleInsight" ]; then
-        mv dist/main "/Applications/VesicleInsight/VesicleInsight"
+        mv "dist/main" "/Applications/VesicleInsight/VesicleInsight"
     else
         echo "The folder /Applications/VesicleInsight is not there. Check the structure of the installation."
     fi
@@ -121,11 +120,11 @@ else
     # Move the PyInstaller output to the Programs directory on other systems
     echo "==========================================================================="
     echo "Please input the root password to ensure proper permissions during the program installation..."
-    sudo mv dist/main "$program_dir/VesicleInsight"
+    sudo mv "dist/main" "$program_dir/VesicleInsight"
 fi
 
-echo "==========================================================================="
 # Cleanup unnecessary files
+echo "==========================================================================="
 echo "Cleaning up unnecessary files..."
 rm -rf build dist
 rm -f main.py
@@ -137,4 +136,3 @@ echo "Installation has been completed."
 echo "You can run the program by simply typing 'VesicleInsight' in the terminal."
 echo "In macOS go to Applications and find the folder 'VesicleInsight'"
 echo "==========================================================================="
-
