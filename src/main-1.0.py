@@ -38,6 +38,9 @@ class ImageClassifierApp(QWidget):
 
         self.setLayout(layout)
 
+        # Initialize img_array as an instance variable
+        self.img_array = None
+
     def load_model(self):
         # Generate a synthetic dataset for demonstration purposes
         X, y = make_classification(n_samples=100, n_features=100, n_classes=2, random_state=42)
@@ -52,15 +55,18 @@ class ImageClassifierApp(QWidget):
 
         if file_name:
             pixmap = QPixmap(file_name)
-            pixmap = pixmap.scaledToWidth(400)
+            pixmap = pixmap.scaledToWidth(10)  # Resize the image to match the expected input size
             self.image_label.setPixmap(pixmap)
 
             # Load the image for classification
             img = Image.open(file_name)
-            img_array = np.array(img)
+            self.img_array = np.array(img)
+
+            # Flatten the resized image to exactly 100 features
+            img_array_flat = self.img_array.flatten()[:100]
+            img_array_flat = img_array_flat.reshape(1, -1)
 
             # Placeholder: Normalize the features (similar to training data)
-            img_array_flat = img_array.reshape(1, -1)
             img_array_flat = StandardScaler().fit_transform(img_array_flat)
 
             # Placeholder: Ensure that the model is trained before attempting classification
@@ -73,7 +79,7 @@ class ImageClassifierApp(QWidget):
 
     def update_ui(self, prediction):
         if prediction == 1:  # Assuming 1 is the label for cancer
-            marked_image = self.mark_cancer(img_array)
+            marked_image = self.mark_cancer(self.img_array)
             pixmap = self.array_to_pixmap(marked_image)
             self.image_label.setPixmap(pixmap)
 
@@ -87,6 +93,10 @@ class ImageClassifierApp(QWidget):
         img = QImage(img_array, img_array.shape[1], img_array.shape[0], img_array.strides[0], QImage.Format_RGB888)
         pixmap = QPixmap.fromImage(img)
         return pixmap
+
+    def classify_image(self):
+        # Placeholder: Implement classification logic here if needed
+        pass
 
 def main():
     app = QApplication(sys.argv)
